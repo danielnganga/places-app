@@ -16,7 +16,7 @@ function App() {
   
 
   const addNewGoalHandler = (newGoal) => {
-    setGoalsList(goalsList.concat(newGoal));
+    setGoalsList((prevgoalsList) =>  prevgoalsList.concat(newGoal));
   }
   return (
     <div>
